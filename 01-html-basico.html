@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Etiquetas y atributos básicos</title>
+	<style>
+		/*	comentario a nivel CSS	
+			aquí se escribe solo código de estilo CSS 
+		  	la estructura de una regla CSS es:
+			selector {
+				nombre_propiedad_CSS: valor;
+				...
+			}
+		*/
+		#contenedor { /* esto da estilo al elemento con id="contenedor", '#'' se usa para selección de 'id' */
+			border: 1px solid blue;
+		}
+
+		h1, h3 { /* esto da estilo a todas las etiquetas h1 */
+			text-align: center;
+
+		}
+		.verde { /* esto aplica a todas la etiquetas con class="verde", '.' se usa paa selección de clases */
+			color: green;
+		}
+		.rojo { color: tomato; }
+		.cursiva { font-style:italic; }
+
+		#p1 {
+			text-indent: 1.5rem;
+		}
+
+	</style>
+		
 </head>
 <body>
+	<!-- comentario a nivel HTML -->
+	<div id="contenedor">
+
+		<h1 class="verde" title="elemento de cabecera de nivel H1">Etiquetas y atributos básicos</h1>
+		<p>
+			<a href="https://uniwebsidad.com/libros/xhtml/capitulo-2/etiquetas-y-atributos" target="_blank">Más información en uniwebsidad.com</a>
+		</p>
+		<p id="p1" class="verde" title="Este es el primer párrafo de la página">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Earum unde alias architecto consectetur rem quos corporis tempore possimus modi laudantium non, voluptas omnis ad tenetur quibusdam dicta assumenda voluptates pariatur?</p>
+		
+		<p class="rojo cursiva">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Itaque quo aperiam illo quis ex qui suscipit sapiente quod dolore iusto iure magnam molestiae sunt numquam nesciunt voluptates provident nisi, tenetur.</p>
+		
+		<h1>Segundo h1</h1>
+		
+		<p style="text-align: right; text-decoration: underline;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ea quasi distinctio magni aut itaque, error hic, possimus quae libero impedit veniam ut, magnam, fugiat sapiente? Ratione temporibus omnis ipsum.</p>
+
+
+		<h3 onclick="javascript:alert('has hecho click')">haz click lanzar el evento onclick (atributo de evento)</h3>
+	</div>
 	
 </body>
 </html>
+
