@@ -2,6 +2,31 @@
 
 .centrar {text-align: center;}
 
+.parrafo {
+	text-indent: 1.5rem;
+	text-align: justify;
+}
+
+strong {
+	color: blue;
+}
+
+blockquote {
+	border-left: 3px solid blue;
+	padding-left: 1rem;
+}
+
+.correo {
+	font-size: 1.2rem; /* tamaño texto con aumento de 20%  respecto a letra base */
+	color: tomato;	
+}
+.tfno {
+	padding: 0.5rem;
+	font-style: italic;
+	font-family: courier;
+}
+
+
 
 
 
