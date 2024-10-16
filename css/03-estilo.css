@@ -3,4 +3,8 @@
 	width: 80%;
 	border: 1px dotted grey;
 	margin: auto;
+	padding: 1rem;
+}
+.centrar {
+	text-align: center;
 }
