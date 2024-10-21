@@ -28,4 +28,25 @@ ul ul, ol ul, ol ol {
 
 ul ul ul, ol ol ul {
 	color: red;
+	list-style-image: url("../img/flecha.png");
 }
+
+.menu {
+	list-style-type: none;
+}
+.menu li {
+	padding: 0.2rem;
+}
+.menu a {
+	text-decoration: none;
+	color:white;
+	background-color: black;
+	padding: 0.2rem 1rem;
+	border: 1px solid black;
+}
+.menu a:hover{
+	color:black;
+	background-color: white;
+}
+
+
