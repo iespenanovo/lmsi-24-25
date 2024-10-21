@@ -1,0 +1,31 @@
+.contenedor {
+	width: 80%;
+	border: 1px dotted grey;
+	margin: auto;
+	padding: 1rem;
+}
+.centrar {
+	text-align: center;
+}
+
+.n1{
+	color:green;
+}
+
+ul.n1 { /* aplica a listas ul de clase n1 */
+	list-style-type: upper-roman;
+}
+ol.n1 { /* aplica a listas ol de clase n1 */
+	list-style-type: lower-latin;
+}
+
+ul ul, ol ul, ol ol { 
+	/* selector múltiple y descendente, 
+	aplica al último elemento del selector 
+	que cumpla la descendencia indicada */
+	color: blue;	
+}
+
+ul ul ul, ol ol ul {
+	color: red;
+}

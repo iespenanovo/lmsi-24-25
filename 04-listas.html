@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listas HTML</title>
+	<link rel="stylesheet" href="css/04-estilo.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1 class="centrar">Listas HTML</h1>
+
+		<h3>Listas no ordenadas &lt;ul&gt;</h3>
+		<h5>Simple:</h5>
+		<ul>
+			<li>A Coruña</li>
+			<li>Lugo</li>
+			<li>Ourense</li>
+			<li>Pontevedra</li>
+		</ul>
+		<h5>Multinivel:</h5>
+
+		<ul class="n1">
+			<li>A Coruña</li>
+			<ul>
+				<li>Ferrol</li>
+				<li>As Pontes</li>
+			</ul>
+			<li>Lugo</li>
+			<ul>
+				<li>Vilalba</li>
+				<ul>
+					<li>IES Lois</li>
+				</ul>
+				<li>Monforte</li>
+				<li>Sarria</li>
+			</ul>
+			<li>Ourense</li>
+			<ul>
+				<li>O Barco</li>
+			</ul>
+			<li>Pontevedra</li>
+			<ul>
+				<li>Vigo</li>
+			</ul>
+		</ul>
+
+		<h3>Listas ordenadas &lt;ol&gt;</h3>
+		<h5>Simple:</h5>
+		<ol>
+			<!-- li{elemento}*5 -->
+			<li>elemento</li>
+			<li>elemento</li>
+			<li>elemento</li>
+			<li>elemento</li>
+			<li>elemento</li>
+		</ol>
+
+		<h5>Multinivel (ol y ul):</h5>
+		<ol class="n1">
+			<li>elemento</li>
+			<ul>
+				<li>elemento</li>
+				<li>elemento</li>
+			</ul>
+			<li>elemento</li>
+			<ol>
+				<li>elemento</li>
+				<li>elemento</li>
+				<ul>
+					<li>elemento</li>
+					<li>elemento</li>
+				</ul>
+				<li>elemento</li>
+			</ol>
+			<li>elemento</li>
+			<li>elemento</li>
+		</ol>
+	</div>
+</body>
+</html>
