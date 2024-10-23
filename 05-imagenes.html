@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Imágenes en HTML</title>
+	<link rel="stylesheet" href="css/05-estilo.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1 class="centrar">Imágenes en HTML</h1>
+
+		<img src="img/car-30984_640.png" alt="img sin especificar ancho y alto">
+
+		<img src="img/car-30984_640.png" width="100" height="200" alt="img con ancho 100 y alto 200 (distosionada)">
+
+		<img src="img/car-30984_640.png" width="100"  alt="img con ancho 100 (se mantiene la relación de aspecto)">
+
+		<img src="img/car-30984_640.png" height="200" alt="img con alto 200 (se mantiene la relación de aspecto)">
+
+		<p class="imagen">
+			<img src="img/car-30984_640.png" alt="tamaño controlado por css">
+			<!-- se ve el color de fondo del contenedor, porque la imagen tiene es una png con transparencias -->
+		</p>
+
+		<p class="imagen">
+			<img src="img/plane-8624140_640.jpg" alt="tamaño controlado por css">
+			<!-- no se ve el color de fondo porque la imagen no tiene transparencias -->
+		</p>
+
+		<p class="imagen">
+			<img src="img/html5-1841458_640.png" alt="tamaño controlado por css">
+			<!-- se ve el color de fondo del contenedor, porque la imagen tiene es una png con transparencias -->
+		</p>
+
+		<h3>Enlace con imagen como contenido:</h3>
+
+		<p class="imagen">
+			<a href="https://fch2.iespenanovo.com/pila-combustible/" target="_blank">
+				<img src="https://fch2.iespenanovo.com/wp-content/uploads/2024/04/fotoPortadaOriginalRecortada2.jpg" alt="Enalce a una imagen de un servidor externo">
+			</a>
+		</p>		
+
+	</div>
+</body>
+</html>

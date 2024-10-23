@@ -1,0 +1,18 @@
+.contenedor {
+	width: 80%;
+	border: 1px dotted grey;
+	margin: auto;
+	padding: 1rem;
+}
+.centrar {
+	text-align: center;
+}
+
+.imagen {
+	background-color: lightsalmon;
+}
+.imagen img { 
+/*aplica a 'img' descendiente de elemento con clase 'imagen'*/
+	width: 100%;
+
+}
