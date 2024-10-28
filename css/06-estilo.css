@@ -1,0 +1,31 @@
+
+.p1, .p2, .p3, .p4{
+	padding: 3rem 1.5rem;
+	background-color: lightgrey;
+}
+.p1 {
+	background-image: url("../img/flecha.png");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+.p2 {
+	background-image: url("../img/html5-1841458_640.png");
+	background-position: 97% 95%;
+	background-repeat: no-repeat;
+	background-size: 15%;
+}
+
+.p3 {
+	background: url("../img/flecha.png") repeat-y 0% 100%,
+				url("../img/html5-1841458_640.png") no-repeat 97% 5%,
+				url("../img/car-30984_640.png") no-repeat 50% 100%;
+	background-size: 3%,12%,40%;
+	background-color:lightgrey;
+
+}
+
+.p4 {
+	background: lightblue url("../img/plane-8624140_640.jpg") no-repeat right bottom;
+	background-size: 15%;
+}
