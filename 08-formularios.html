@@ -43,6 +43,16 @@
 			<input type="hidden" name="ref" value="cp100">
 
 			<div class="campo">
+				<label for="fn">Fecha nacimento:</label>
+				<input id="fn" type="date" name="fnac" >
+			</div>
+
+			<div class="campo">
+				<label for="edad">Edad:</label>
+				<input id="edad" type="number" name="edad">
+			</div>
+
+			<div class="campo">
 				<!-- lista simple: -->
 				<label for="prov">Provincia:</label>
 				<select name="provincia" id="prov">
@@ -58,7 +68,8 @@
 			<div class="campo">
 				<!-- lista múltiple, se pueden seleccionar varias opciones -->
 				<label for="depor">Deportes:</label>
-				<select name="dep[]" id="depor" multiple>
+				<select name="dep[]" id="depor" multiple size="4">
+					<!-- size indica el número de opciones visible directamente -->
 					<option value="F">Fútbol</option>
 					<option value="B">Baloncesto</option>
 					<option value="T">Ténis</option>

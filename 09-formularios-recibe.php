@@ -16,12 +16,16 @@
 			$term=$_GET['terminos']??"NO";
 			$ref=$_GET['ref']??"NO";
 			$prov=$_GET['provincia']??"";
+			$fnac=$_GET['fnac']??"";
+			$edad=$_GET['edad']??"";
 			$dep=$_GET['dep']??array(); //recibimos una colección 
 
 			echo "\n<p>Nombre: $nom</p>";
 			echo "\n<p>Contraseña: $clav</p>";
 			echo "\n<p>Sexo: $sex</p>";
 			echo "\n<p>Términos aceptados: $term</p>";
+			echo "\n<p>Fecha nacimineto: $fnac</p>";
+			echo "\n<p>Edad: $edad</p>";
 			echo "\n<p>Referencia (campo oculto): $ref</p>";
 			echo "\n<p>Provincia: $prov</p>";
 			echo "\n<p>Deportes:";
