@@ -42,6 +42,33 @@
 			<!-- campo oculto, por eso no maquetamos a nivel html -->
 			<input type="hidden" name="ref" value="cp100">
 
+			<div class="campo">
+				<!-- lista simple: -->
+				<label for="prov">Provincia:</label>
+				<select name="provincia" id="prov">
+					<option value=""></option>
+					<option value="CO">A Coruña</option>
+					<option value="LU">Lugo</option>
+					<option value="OU">Ourense</option>
+					<option value="PO">Pontevedra</option>
+					<!-- para marcar una opción por defecto, usaremos el parámetro selected -->
+				</select>
+			</div>
+
+			<div class="campo">
+				<!-- lista múltiple, se pueden seleccionar varias opciones -->
+				<label for="depor">Deportes:</label>
+				<select name="dep[]" id="depor" multiple>
+					<option value="F">Fútbol</option>
+					<option value="B">Baloncesto</option>
+					<option value="T">Ténis</option>
+					<option value="N">Natación</option>
+				</select>
+			</div>
+
+
+
+
 
 			
 
