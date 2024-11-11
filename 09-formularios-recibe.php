@@ -12,11 +12,14 @@
 		<?php 
 			$nom=$_GET['nombre']??"";
 			$clav=$_GET['clave']??"";
+			$sex=$_GET['sexo']??"";
 
-			echo "<p>Nombre: $nom</p>";
-			echo "<p>Contraseña: $clav</p>";
+			echo "\n<p>Nombre: $nom</p>";
+			echo "\n<p>Contraseña: $clav</p>";
+			echo "\n<p>Sexo: $sex</p>";
 
 		?>
+
 		<div>
 			<a href="08-formularios.html">V O L V E R</a>
 		</div>
