@@ -1,4 +1,20 @@
 
-.campo {
+.campo, fieldset {
 	margin-bottom: 1rem;
 }
+
+label {
+	color: blue;
+}
+label.bloque {
+	/* para que se comporten como etiquetas de tipo bloque */
+	display: block; 
+}
+
+textarea {
+	width: 100%;
+}
+input[type="number"]{
+	width: 50px;
+}
+

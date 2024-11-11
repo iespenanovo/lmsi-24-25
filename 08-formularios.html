@@ -12,78 +12,82 @@
 		<h1 class="centrar">Formularios en HTML</h1>
 
 		<form action="09-formularios-recibe.php" method="GET">
-			<div class="campo">
-				<label for="l-nombre">Nombre:</label>
-				<input id="l-nombre" type="text" name="nombre">
-				<!-- podemos indicar un valor por defecto con el parámetro value="valor" -->
-			</div>
+			<fieldset>
+				<legend>Grupo 1</legend>
+				<div class="campo">
+					<label for="l-nombre">Nombre:</label>
+					<input id="l-nombre" type="text" name="nombre">
+					<!-- podemos indicar un valor por defecto con el parámetro value="valor" -->
+				</div>
 
-			<div class="campo">
-				<label for="l-clave">Contraseña:</label>
-				<input id="l-clave" type="password" name="clave">
-			</div>
+				<div class="campo">
+					<label for="l-clave">Contraseña:</label>
+					<input id="l-clave" type="password" name="clave">
+				</div>
 
-			<div class="campo">
-				<label>Sexo:</label>
-				<input  id="H" type="radio" name="sexo" value="H">
-				<!-- para marcar una opción por defecto, se usa el parámetro checked -->
-				<label for="H"> Hombre</label>
-				<input id="M" type="radio" name="sexo" value="M">
-				<label for="M"> Mujer</label>
-				<!-- ojo con el name, para que las opciones formen un grupo han de tener el mismo name -->
-			</div>
+				<div class="campo">
+					<label class="bloque">Sexo:</label>
+					<input  id="H" type="radio" name="sexo" value="H">
+					<!-- para marcar una opción por defecto, se usa el parámetro checked -->
+					<label for="H"> Hombre</label>
+					<input id="M" type="radio" name="sexo" value="M">
+					<label for="M"> Mujer</label>
+					<!-- ojo con el name, para que las opciones formen un grupo han de tener el mismo name -->
+				</div>
 
-			<div class="campo">
-				<input id="term" type="checkbox" name="terminos" value="SI" >
-				<!-- para marcar un casilla por defecto, se usa el parámetro checked -->				
-				<label for="term">Acepto los términos</label>
-			</div>
+				<div class="campo">
+					<input id="term" type="checkbox" name="terminos" value="SI" >
+					<!-- para marcar un casilla por defecto, se usa el parámetro checked -->				
+					<label for="term">Acepto los términos</label>
+				</div>
 
-			<!-- campo oculto, por eso no maquetamos a nivel html -->
-			<input type="hidden" name="ref" value="cp100">
+				<!-- campo oculto, por eso no maquetamos a nivel html -->
+				<input type="hidden" name="ref" value="cp100">
 
-			<div class="campo">
-				<label for="fn">Fecha nacimento:</label>
-				<input id="fn" type="date" name="fnac" >
-			</div>
+				<div class="campo">
+					<label for="fn">Fecha nacimento:</label>
+					<input id="fn" type="date" name="fnac" >
+				</div>
 
-			<div class="campo">
-				<label for="edad">Edad:</label>
-				<input id="edad" type="number" name="edad">
-			</div>
+				<div class="campo">
+					<label for="edad">Edad:</label>
+					<input id="edad" type="number" name="edad">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Grupo 2</legend>
+				<div class="campo">
+					<!-- lista simple: -->
+					<label for="prov">Provincia:</label>
+					<select name="provincia" id="prov">
+						<option value=""></option>
+						<option value="CO">A Coruña</option>
+						<option value="LU">Lugo</option>
+						<option value="OU">Ourense</option>
+						<option value="PO">Pontevedra</option>
+						<!-- para marcar una opción por defecto, usaremos el parámetro selected -->
+					</select>
+				</div>
 
-			<div class="campo">
-				<!-- lista simple: -->
-				<label for="prov">Provincia:</label>
-				<select name="provincia" id="prov">
-					<option value=""></option>
-					<option value="CO">A Coruña</option>
-					<option value="LU">Lugo</option>
-					<option value="OU">Ourense</option>
-					<option value="PO">Pontevedra</option>
-					<!-- para marcar una opción por defecto, usaremos el parámetro selected -->
-				</select>
-			</div>
+				<div class="campo">
+					<!-- lista múltiple, se pueden seleccionar varias opciones -->
+					<label for="depor" class="bloque">Deportes:</label>
+					<select name="dep[]" id="depor" multiple size="4">
+						<!-- size indica el número de opciones visible directamente -->
+						<option value="F">Fútbol</option>
+						<option value="B">Baloncesto</option>
+						<option value="T">Ténis</option>
+						<option value="N">Natación</option>
+					</select>
+				</div>
 
-			<div class="campo">
-				<!-- lista múltiple, se pueden seleccionar varias opciones -->
-				<label for="depor">Deportes:</label>
-				<select name="dep[]" id="depor" multiple size="4">
-					<!-- size indica el número de opciones visible directamente -->
-					<option value="F">Fútbol</option>
-					<option value="B">Baloncesto</option>
-					<option value="T">Ténis</option>
-					<option value="N">Natación</option>
-				</select>
-			</div>
+				<div class="campo">
+					<label for="coment" class="bloque">Comentario:</label>
+					<textarea name="coment" id="coment" rows="4"></textarea>
+					<!-- rows nos indica el número de líneas visibles por defecto. -->
+				</div>			
 
-
-
-
-
-			
-
-
+			</fieldset>
 
 			<div class="campo">
 				<input type="submit" value="Enviar formulario">
