@@ -12,11 +12,13 @@
 		<?php 
 			$nom=$_GET['nombre']??"";
 			$clav=$_GET['clave']??"";
-			$sex=$_GET['sexo']??"";
+			$sex=$_GET['sexo']??"?";
+			$term=$_GET['terminos']??"NO";
 
 			echo "\n<p>Nombre: $nom</p>";
 			echo "\n<p>Contraseña: $clav</p>";
 			echo "\n<p>Sexo: $sex</p>";
+			echo "\n<p>Términos aceptados: $term</p>";
 
 		?>
 

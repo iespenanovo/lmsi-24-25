@@ -15,6 +15,7 @@
 			<div class="campo">
 				<label for="l-nombre">Nombre:</label>
 				<input id="l-nombre" type="text" name="nombre">
+				<!-- podemos indicar un valor por defecto con el parámetro value="valor" -->
 			</div>
 
 			<div class="campo">
@@ -23,17 +24,34 @@
 			</div>
 
 			<div class="campo">
-				<input type="submit" value="Enviar formulario">
-			</div>
-
-			<div class="campo">
 				<label>Sexo:</label>
-				<input id="H" type="radio" name="sexo" value="H">
+				<input  id="H" type="radio" name="sexo" value="H">
+				<!-- para marcar una opción por defecto, se usa el parámetro checked -->
 				<label for="H"> Hombre</label>
 				<input id="M" type="radio" name="sexo" value="M">
 				<label for="M"> Mujer</label>
+				<!-- ojo con el name, para que las opciones formen un grupo han de tener el mismo name -->
 			</div>
+
+			<div class="campo">
+				<input id="term" type="checkbox" name="terminos" value="SI" >
+				<!-- para marcar un casilla por defecto, se usa el parámetro checked -->				
+				<label for="term">Acepto los términos</label>
+			</div>
+
+			<!-- campo oculto, por eso no maquetamos a nivel html -->
+			<input type="hidden" name="ref" value="cp100">
+
+
 			
+
+
+
+			<div class="campo">
+				<input type="submit" value="Enviar formulario">
+				<input type="reset" value="Reiniciar formulario">
+			</div>
+
 		</form>
 
 		
