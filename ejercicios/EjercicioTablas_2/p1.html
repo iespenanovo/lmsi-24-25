@@ -1,14 +1,92 @@
 ﻿<html>
 <head>
-  <title>Ejercicio 1</title>
-  <style type="text/css" >
-	.nombre {text-align: center; border:5px dashed red; width: 900px; margin: auto;padding: 10px; color:blue;}
-	
-  </style>
+	<title>Ejercicio 1</title>
+	<style type="text/css" >
+		.nombre {text-align: center; border:5px dashed red; width: 900px; margin: auto;padding: 10px; color:blue;}
+
+		.contenedor {
+			margin: 1.7rem;
+			border: 3px dotted grey;
+			padding: 2rem;
+			background: url("imagenes/saludo1.png") repeat-y right bottom;
+			background-color: #eee;
+
+		}
+		table {
+			background-color: white;
+			width: 50%;
+			margin: auto;
+			border: 3px solid black;
+			padding: 1.2rem;
+			text-align: center;
+			border-spacing: 0.7rem;
+		}
+		table caption{
+			font-size: 2rem;
+			font-weight: bold;
+			padding: 0.5rem;
+		}
+		td {
+			border: 1px solid black;
+			width: 50%;
+			padding: 0.75rem;
+		}
+		td p {
+			color: blue;
+			font-size: 1.1em;
+		}
+
+		.fondo td:hover {
+			background-color: #ddd;
+		}
+	</style>
 </head>
 <body>
-	<h1 class="nombre">Pon aquí tu nombre y apellidos</h1>
-	
+	<h1 class="nombre">Nombre Apellido1 Apellido2</h1>
+	<div class="contenedor">
+		<table>
+			<caption>Oferta Ciclos Formativos</caption>
+			<tr>
+				<td colspan="2">
+					<img src="imagenes/logo.jpg">
+				</td>
+			</tr>
+			<tr class="fondo">
+				<td>
+					<p>Administrativo</p>
+					<a href="documentos/administracion.pdf">
+						<img src="imagenes/admin.jpg">
+					</a>
+				</td>
+				<td>
+					<p>Informática</p>
+					<a href="documentos/informatica.pdf">
+						<img src="imagenes/infor.jpg">
+					</a>
+				</td>
+			</tr>
+			<tr class="fondo">
+				<td>
+					<p>Electricidad</p>
+					<a href="documentos/electricidad.pdf">
+						<img src="imagenes/elect.jpg">
+					</a>
+				</td>
+				<td>
+					<p>Mecánica</p>
+					<a href="documentos/mecanica.pdf">
+						<img src="imagenes/meca.jpg">
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<a href="http://edu.xunta.es" target="_blank">Ver oferta educativa completa</a>
+				</td>
+			</tr>
+
+		</table>
+	</div>
 	
 </body>
 </html>
