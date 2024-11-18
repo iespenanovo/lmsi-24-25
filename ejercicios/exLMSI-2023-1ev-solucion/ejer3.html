@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 2</title>
+	<link rel="stylesheet" href="css/basico.css">
+	<link rel="stylesheet" href="css/estilo-3.css">
+</head>
+<body>
+	<h2 class="_nombre">Pon aquí tu nombre y apellidos</h2>
+	<h3 class="_nombre _ejercicio">Ejercicio 3. Tabla</h3>
+
+<!-- 	Ayuda de teclas rápidas de SublimeText:	
+		Ctrl+Shift+A ->selecciona contenido etiqueta (recursivo)
+		Alt+Shift+W ->envuelve selección con etiqueta deseada
+ -->
+	<div id="contenedor">
+		
+		<table>
+			<caption>Tabla examen</caption>
+			<!-- tr>(td{A.$})*4 -->
+			<tr>
+				<td>1.A</td>
+				<td rowspan="2">1.B - 2.B</td>
+				<td>1.C</td>
+				<td>1.D</td>
+				<td>1.E</td>
+			</tr>		
+			<tr>
+				<td>2.A</td>
+				<!-- <td>2.B</td> -->
+				<td>2.C</td>
+				<td>2.D</td>
+				<td>2.E</td>
+			</tr>		
+			<tr>
+				<td>3.A</td>
+				<td>3.B</td>
+				<td>3.C</td>
+				<td colspan="2" rowspan="3">
+				<a href="img/ejercicio-3.jpg" target="_blank">3.D - 5.E</a>
+			</td>
+				<!-- <td>3.E</td> -->
+			</tr>		
+			<tr>
+				<td>4.A</td>
+				<td>4.B</td>
+				<td>4.C</td>
+				<!-- <td>4.D</td> -->
+				<!-- <td>4.E</td> -->
+			</tr>		
+			<tr>
+				<td>5.A</td>
+				<td>5.B</td>
+				<td>5.C</td>
+				<!-- <td>5.D</td> -->
+				<!-- <td>5.E</td> -->
+			</tr>			
+		</table>
+		
+
+	</div> <!-- fin div #contenedor -->
+
+	<!-- Este div solo es para mostrar la imagen de la tabla que se pretende -->
+ 	<div class="_imagen" style="width: 700px;">
+ 	<h3>Crea una tabla con la estructura y apariencia de la siguiente imagen:</h3>	
+	<a href="img/ejercicio-3.jpg" target="_blank" ><img src="img/ejercicio-3.jpg" width="100%" title="Crea una tabla con esta apariencia" ></a>
+	</div>
+
+</body>
+</html>
