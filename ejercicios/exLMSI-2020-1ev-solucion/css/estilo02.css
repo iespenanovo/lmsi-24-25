@@ -1,0 +1,37 @@
+body {
+	font-size: 1.2em; 
+	background-color: #ddd;
+}
+#contenedor {
+	width: 40%;
+	border: 1px dotted grey;
+	padding: 20px 20px 120px 20px;
+	margin: 50px auto;
+	/* background-color: #fff;*/    
+	background: #fff url("../img/ok.png") no-repeat right bottom;
+}
+caption {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 15px;
+	color: blue;
+} 
+
+table {
+	margin: 0 auto;
+	width: 90%;
+	border: 2px dotted red;
+	border-spacing: 10px;
+	padding: 20px;
+
+}
+
+td {
+	border: 1px solid blue;
+	padding: 10px;
+	text-align: center;
+}
+
+td[rowspan], td[colspan] {
+	background-color: tomato;
+}

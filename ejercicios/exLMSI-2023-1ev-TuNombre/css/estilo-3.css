@@ -1,0 +1,14 @@
+body {
+	font-size: 1.2em; 
+	background-color: #ddd;
+}
+#contenedor {
+	width: 700px;
+	border: 1px dotted #E13E1B;
+	padding: 0 30px 80px 30px;
+	margin: 50px auto;
+
+	background-color: #fff;
+
+}
+
