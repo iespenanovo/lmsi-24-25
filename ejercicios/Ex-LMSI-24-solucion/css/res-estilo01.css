@@ -9,7 +9,7 @@ body {
 	margin: 50px auto;
 /*	background-color: white;*/
 	
-	background: #fff url("../img/bombilla.png") no-repeat bottom right;
+	background: white url("../img/bombilla.png") no-repeat bottom right;
 
 }
 .lista{
@@ -34,7 +34,7 @@ ol ul ol {
 	font-size: 1rem;
 	color: green;
 }
-
+/*
 li {
 	padding: 5px;
-}
+}*/
