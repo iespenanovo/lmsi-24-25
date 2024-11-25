@@ -1,0 +1,22 @@
+body {
+	font-size: 1.2em; 
+	background-color: #ddd;
+}
+#contenedor {
+	width: 700px;
+	border: 1px dotted grey;
+	padding: 20px;
+	margin: 50px auto;
+
+	background-color: white;
+	
+}
+.lista{
+	border:1px dashed tomato;
+	padding: 5px 15px; 
+	margin:15px;
+
+}
+
+/* añade y/o modifica el CSS que necesites */
+
