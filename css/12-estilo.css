@@ -1,0 +1,39 @@
+* {box-sizing: border-box;}
+
+#contenedor {
+	width: 90%;
+	border: 1px solid blue;
+	margin: auto;
+
+}
+
+#cabecera, #contenido, #pie {
+	border: 1px dotted grey;
+	overflow: hidden;
+
+}
+#cabecera div, #contenido div, #pie div{
+	float: left;
+}
+
+#logo {
+	width: 20%;
+	background-color: lightblue;
+/*	float: left;*/
+}
+#menu {
+	width: 80%;
+	background-color: lightcoral;
+/*	float: left;*/
+}
+
+#principal {
+	width: 80%;
+	background-color: lightcyan;
+}
+#lateral {
+	width: 20%;
+	background-color: lightsalmon;
+}
+
+

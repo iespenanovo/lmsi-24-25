@@ -1,0 +1,40 @@
+* { box-sizing:border-box; }
+
+.uno, .dos, .tres, .cuatro {
+	border: 1px solid blue;
+	padding: 1rem;
+	margin-bottom: 5rem;
+	width: 75%;
+}
+.contenedor {
+	position: relative;
+
+}
+.uno {
+	position: static;
+	/* no es necesario indicarlo, 
+	pues es el que se aplica por defecto 	*/
+}
+
+.dos {
+	position: relative;
+	left: 100px; /* = right: -100px;*/
+	top: 50px; /* =	bottom: -50px;*/
+	background-color: lightblue;
+	z-index: 2;
+}
+
+.tres {
+	position: absolute;
+	bottom: 20px;
+	right: 50px;
+	z-index: 1;
+}
+
+.cuatro {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+	color: white ;
+}
