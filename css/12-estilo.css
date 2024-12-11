@@ -2,8 +2,10 @@
 
 #contenedor {
 	width: 90%;
+	max-width: 900px;
 	border: 1px solid blue;
 	margin: auto;
+	text-align: center;
 
 }
 
@@ -11,6 +13,9 @@
 	border: 1px dotted grey;
 	overflow: hidden;
 
+}
+#logo, #menu, #principal, #lateral, .col-pie {
+	padding: 2rem 0.7rem;
 }
 #cabecera div, #contenido div, #pie div{
 	float: left;
@@ -35,5 +40,15 @@
 	width: 20%;
 	background-color: lightsalmon;
 }
+.col-pie {
+	width: 33.33%;
+	border: 1px dashed lightsalmon;
+	background-color: #333;
+	color: #fff;
 
+}
+
+.limpiar {
+	clear: both;
+}
 
