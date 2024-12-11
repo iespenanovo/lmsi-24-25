@@ -1,0 +1,15 @@
+* {box-sizing: border-box;}
+
+#contenedor1 {
+	/* #contenedor1 será un contenedor flex 
+	automáticamente sus descendientes 
+	directos (hijos) serán items flex: */
+	display: flex; 
+	flex-direction: row-reverse; 
+}
+
+#contenedor1 > div {
+	padding: 1rem;
+	border: 1px solid grey;
+}
+
