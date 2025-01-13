@@ -61,6 +61,7 @@
 	center – los elementos flex se alinean partiendo del centro del eje perpendicular.
 	space-between – los elementos flex se distribuyen uniformemente a lo largo del eje perpendicular, entre flex start y flex end.
 	space-around – los elementos flex se distribuyen uniformemente, pero un valor igual la mitad del espacio entre los elementos es añadido en cada extremo.
+	space-evenly - igual que space-around, pero todos los espacios son iguales, incluso en los extremos 
 	strech - los elementos flex se ajustan a lo largo del eje perpendicular ocupando el contenedor (es el comportamiento predeterminado).	
 	*/
 	
@@ -76,12 +77,23 @@
 	flex-wrap: wrap;
 
 	justify-content: space-around;
-	align-content: space-between;
-
-
+	align-content: space-evenly;
 }
 
-#contenedor1 > div, #contenedor2 > div {
+#contenedor3 {
+	margin-top: 1rem;
+	border: 1px solid green;
+	display: flex;
+	flex-wrap: wrap;
+	/* En Flex CSS existe una propiedad de atajo para los huecos, 
+	denominada gap. Con esta propiedad podemos indicar de una sola vez valores para las propiedades row-gap y column-gap, de forma que escribimos 
+	menos y es más cómodo en ciertas situaciones: */
+	row-gap: 1rem; /* separación de filas de items */
+	column-gap: 0.5rem; /* separación de columnas de items */
+	gap: 1rem 0.5rem; /* equivale a las 2 anteriores */
+}
+
+#contenedor1 > div, #contenedor2 > div, #contenedor3 > div {
 	padding: 1rem;
 	border: 1px solid grey;
 	text-align: center;
