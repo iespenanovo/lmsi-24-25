@@ -1,15 +1,96 @@
 * {box-sizing: border-box;}
-
+/* https://webdesign.tutsplus.com/es/a-comprehensive-guide-to-flexbox-alignment--cms-30183t */
 #contenedor1 {
+	border:1px solid blue;
+	height:300px;
 	/* #contenedor1 será un contenedor flex 
 	automáticamente sus descendientes 
 	directos (hijos) serán items flex: */
 	display: flex; 
-	flex-direction: row-reverse; 
+	/*
+	flex-direction: row; – el eje principal se prolonga de izquierda a derecha (valor por defecto)
+	flex-direction: row-reverse; – el eje principal se prolonga desde la derecha hacia la izquierda
+	flex-direction: column; – el eje principal se prolonga desde la parte superior hacia abajo
+	flex-direction: column-reverse; – el eje principal se prolonga desde la parte inferior hacia la superior
+	*/
+	flex-direction: row;  /*no es necesario indicarlo, pues es el valor por defecto */
+
+	/* flex-wrap, determina si los items saltan o no cuando no hay espacio suficiente en el eje principal:
+		nowrap -> los items no saltan, valor por defecto
+		wrap -> los items saltan 
+		wrap-reverse -> saltan en sentido contrario
+	*/
+
+	flex-wrap: wrap; /* en este caso permitimos saltos de línea 
+
+	/*flex-flow: row wrap; /* se pueden agrupar las dos propiedades en una*/
+
+	/* justificación de los items en el eje principal: */
+	/*
+	justify-content: ;
+	valores:;
+	flex-start – los elementos flex se justifican a partir del punto de inicio del eje principal (este es el comportamiento predeterminado).
+	flex-end – los elementos flex se justifican desde el final del eje principal.
+	center – los elementos flex se justifican partiendo desde el centro del eje principal.
+	space-between – los elementos flex se distribuyen uniformemente a lo largo del eje principal, desde flex-start hasta flex-end.
+	space-around – los elementos flex se distribuyen uniformemente a lo largo del eje principal, pero se añaden espacios extra iguales a la mitad del resto en ambos extremos.
+	space-evenly - igual que space-around, pero todos los espacios son iguales, incluso en los extremos */
+
+	justify-content: space-between;
+
+	/* justificación de los items en eje transversal 
+	cuando solo tenemos una línea (fila o columna) de items: */
+	/*	
+	align-items (desde el contenedor) y 
+	align-self (desde un item en particular)
+	valores posibles de estas propiedades:
+	auto – hace que la propiedad align-self herede el valor align-items (predeterminada para align-self)
+	flex-start – los elementos flex se alinean desde el inicio del eje perpendicular
+	flex-end – los elementos flex se alinean desde el final del eje perpendicular
+	center – los elementos flex se alinean en el centro del eje perpendicular
+	baseline – los elementos flex se alinean de tal forma que su línea de base coincida
+	strech – los elementos flex se distribuyen a lo largo del eje perpendicular repartiéndose y ocupando el contenedor flex (predeterminado para align-items)	
+	*/
+	align-items: center;
+	/* justificación de los items en eje transversal 
+	cuando solo tenemos varias líneas (filas o columnas) de items: */
+	/* propiedad align-content, valores: */	
+	/*
+	flex-start – los elementos flex se alinean desde el inicio del eje perpendicular
+	flex-end – los elementos flex se alinean a partir del final del eje perpendicular.
+	center – los elementos flex se alinean partiendo del centro del eje perpendicular.
+	space-between – los elementos flex se distribuyen uniformemente a lo largo del eje perpendicular, entre flex start y flex end.
+	space-around – los elementos flex se distribuyen uniformemente, pero un valor igual la mitad del espacio entre los elementos es añadido en cada extremo.
+	strech - los elementos flex se ajustan a lo largo del eje perpendicular ocupando el contenedor (es el comportamiento predeterminado).	
+	*/
+	
+
 }
 
-#contenedor1 > div {
+#contenedor2 {
+	margin-top: 1rem;
+	border: 1px solid red;
+	height: 300px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+	align-content: space-between;
+
+
+}
+
+#contenedor1 > div, #contenedor2 > div {
 	padding: 1rem;
 	border: 1px solid grey;
+	text-align: center;
+	font-size: 2rem;
 }
 
+
+#contenedor1 > div:nth-child(5) {
+	background-color: lightblue;
+	padding: 3rem 1rem;
+	align-self: flex-end;
+}
