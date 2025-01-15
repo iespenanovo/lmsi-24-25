@@ -1,0 +1,25 @@
+* {	box-sizing: border-box;}
+
+#contenedor {
+	border: 1px solid blue;
+	display: flex;
+	justify-content: space-around;
+}
+
+#contenedor .seccion {
+	border: 1px solid grey;
+	padding: 1rem;
+	flex-basis: 32%;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.seccion > p {
+	border: 1px dotted green;
+	text-align: center;
+	padding: 0.8rem;
+	flex-basis: 40%;
+}
+
