@@ -1,0 +1,28 @@
+* {box-sizing: border-box;}
+
+#contenedor1 {
+	border: 1px solid blue;
+	display: flex;
+	column-gap: 3px;
+}
+
+#contenedor1 > div { 
+	padding: 1rem;
+	border: 1px solid grey;
+	text-align: center;
+	font-size: 2rem;
+	flex-basis: 8%;
+
+}
+
+#contenedor1 > div:nth-child(5) {
+	background-color: #ccc;
+	flex-grow: 1; /* si sobra espacio, este item crece en proporción al valor de flex-grow */
+	order: 1;
+}
+
+#contenedor1 > div:nth-child(1) {
+	background-color: lightblue;
+	flex-grow: 2; /* si sobra espacio, este item crece en proporción al valor de flex-grow */
+}	
+
