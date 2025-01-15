@@ -1,18 +1,24 @@
 * {box-sizing: border-box;}
 
-#contenedor1 {
+#contenedor1, #contenedor2 {
 	border: 1px solid blue;
 	display: flex;
 	column-gap: 3px;
 }
 
-#contenedor1 > div { 
+#contenedor1 > div, #contenedor2 > div, #contenedor3 > div { 
 	padding: 1rem;
 	border: 1px solid grey;
 	text-align: center;
 	font-size: 2rem;
-	flex-basis: 8%;
+}
 
+#contenedor1 > div {
+	flex-basis: 8%;
+}
+
+#contenedor2 > div {
+	flex-basis: 15%;
 }
 
 #contenedor1 > div:nth-child(5) {
@@ -26,3 +32,24 @@
 	flex-grow: 2; /* si sobra espacio, este item crece en proporción al valor de flex-grow */
 }	
 
+#contenedor2 > div:nth-child(5) {
+	background-color: #ccc;
+	flex-shrink: 4; /* si no hay espacio, este elemento se acorta más  */
+}	
+
+#contenedor2 > div:nth-child(1) {
+	background-color: lightblue;
+	flex-shrink: 2; /* si no hay espacio, este elemento se acorta más  */
+}	
+
+#contenedor3 {
+	border: 1px solid red;
+	display: flex;
+	flex-wrap: wrap; /* multilínea */
+	justify-content: space-between;
+	row-gap: 0.8rem;
+}
+
+#contenedor3 > div {
+	flex-basis: 18%;
+}
