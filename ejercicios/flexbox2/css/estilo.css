@@ -1,0 +1,16 @@
+
+/**
+ * CSS Flexible Layout Module - Caja Flexible -
+ */
+
+* { box-sizing:border-box; }
+
+.dos{
+	background-color: #b6ebb3;
+}
+.uno {
+	background-color: #bacee3;
+}
+.tres {
+	background-color: #7ebdbb;
+}
