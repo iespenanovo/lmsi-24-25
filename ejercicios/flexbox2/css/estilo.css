@@ -14,3 +14,52 @@
 .tres {
 	background-color: #7ebdbb;
 }
+
+#cabecera {
+	background-color: #202020;
+	height: 170px;
+	display: flex;
+/*	flex-direction:row-reverse;, en lugar de justify-content: flex-end;*/
+	justify-content: flex-end;
+	align-items: center;
+/*	padding-right: 12%;*/
+/*  también podría dar un padding-right al #logo
+	y tendría el mismo efecto visual
+*/
+}
+/*
+#logo {
+	padding-right: 12%;
+}
+*/
+
+h1 {
+	text-align: center;
+}
+
+#viajes {
+/*	border: 1px solid blue;*/
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.viajes-item {
+/*	border: 1px solid red;*/
+	flex-basis: 33.33%;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.viajes-item img {
+	width: 100%;
+	order: -1;
+}
+
+.viajes-item button {
+	width: 35%;
+	align-self: center;
+	margin-top: auto;
+}
+
