@@ -42,8 +42,8 @@ h1 {
 	display: flex;
 /*	flex-direction: row-reverse;*/
 /* no vamos a usar row-reverse en este caso, 
-porque al ser responsive, al llegar a table nos salta 
-el primer Oporto y secoloca por debajo a la derecha 
+porque al ser responsive, al llegar a 'table' nos salta 
+el primer item (Oporto) y se coloca por debajo a la derecha 
 (antinatural)
 Resolvemos el orden con 'order' */
 }
