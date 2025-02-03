@@ -2,14 +2,33 @@
 
 /* usaremos un diseño responsive mobile-first  */
 /* dando prioridad a los dispositivos pequeños */
+/*
+1 columna : por defecto para dispositivos muy pequeños
+2 columans: para dispostivos pequeños
+3 columans: para dispostivos medianos (tablet)
+4 columans: para dispostivos escritorios
+6 columans: para dispostivos escritorios grandes
+8 columans: para dispostivos escritorios muy grandes
+
+En .contenedor1 lo hacemos de forma que no sobre espacio entre columnas.
+Las columnas ocupan todo el espacio disponible
+
+En .contenedor2 dejaremos un 10% de espacio libre para distribuir entre
+las columans, es decir, las columnas ocupan el 90% del espacio-
+*/
 
 body {
 	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
 /* contenedor flex: */
-.contenedor1 {
-	border: 1px solid blue;
+.contenedor1, .contenedor2 {
+	width: 100%;
+	margin: auto;
+	padding: 2rem 0;
+
 	display: flex;
 	flex-wrap: wrap;
 /*	flex-direction: column; 
@@ -18,18 +37,36 @@ body {
     ni poner flex-basis al 100% 
     Pero luego lo tendré que cambiar para más de 1 columna.*/
 
-    row-gap: 10px;
+    row-gap: 10px; /*para conseguir espacio entre filas de items*/
+}
+.contenedor1 {
+	background-color: lightblue;
+	border: 1px solid lightblue;
+
+}
+.contenedor2-fondo {
+	background-color:lightcoral;
+
+
+}
+.contenedor2 {
+	/* hereda el color de fondo de .contenedor2-fondo */
+	border: 1px dotted white;
+
+/* distribuimos items según nos interese (diseño):	*/
+	justify-content: space-evenly;
+/*	justify-content: space-between;*/
+/*	justify-content: space-around;*/
 }
 
+
 /*	items flex: */
-.contenedor1 > div {
+.contenedor1 > div, .contenedor2 > div {
 	border: 1px solid grey;
+	background-color: white;
 	padding: 1rem;
 	font-size: 2rem;
-
 	flex-basis: 100%;
-
-
 }
 
 
@@ -37,28 +74,75 @@ body {
 /* No media query for `xs` since this is the default in Bootstrap*/
 
 /* Small devices (landscape phones, 576px and up)*/
+/* 2 columnas: */
 @media (min-width: 576px) {
-	.contenedor1 > div {
-		flex-basis: 50%;
+	.contenedor1, .contenedor2{
+		width: 95%;
 	}
+	.contenedor1 > div {
+		flex-basis: 50%; /* 100%/2=50%*/
+	}
+	.contenedor2 > div {
+		flex-basis: 45%; /* 90%/2=45%*/
+	}
+
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
+/* 3 columnas */
 @media (min-width: 768px) {
-
+	.contenedor1, .contenedor2{
+		width: 90%;
+	}
+	.contenedor1 > div {
+		flex-basis: 33.33%; /* 100%/3=33.33%*/
+	}
+	.contenedor2 > div {
+		flex-basis: 30%; /* 90%/3=30%*/
+	}	
 }
 
 /* Large devices (desktops, 992px and up)*/
+/* 4 columnas */
 @media (min-width: 992px) {
+	.contenedor1, .contenedor2{
+		width: 85%;
+	}
 
+	.contenedor1 > div {
+		flex-basis: 25%; /* 100%/4=25%*/
+	}
+	.contenedor2 > div {
+		flex-basis: 22.5%; /* 90%/4=22.5%*/
+	}	
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
+/* 6 columnas */
 @media (min-width: 1200px) {
+	.contenedor1, .contenedor2{
+		width: 80%;
+	}
 
+	.contenedor1 > div {
+		flex-basis: 16.66%; /* 100%/6=16.66%*/
+	}
+	.contenedor2 > div {
+		flex-basis: 15%; /* 90%/6=15%*/
+	}	
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
+/* 8 columnas */
 @media (min-width: 1400px) {
-
+	.contenedor1, .contenedor2{
+		width: 75%;
+	}
+		.contenedor1 > div {
+		flex-basis: 12.50%; /* 100%/8=12.50%*/
+	}
+	.contenedor2 > div {
+		flex-basis: 11.25%; /* 90%/8=11.25%*/
+	}	
 }
