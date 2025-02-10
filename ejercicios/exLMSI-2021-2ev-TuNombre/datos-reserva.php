@@ -26,16 +26,18 @@
 		$fpago = $_GET["fpago"] ?? "";
 		$coment = $_GET["coment"] ?? "";
 
-		echo "<p>Nombre: $nombre</p>";
-		echo "<p>Tipo habitación: $tipohab</p>";
-		echo "<p>Extras:";
+		echo "\n<p>Nombre: $nombre</p>";
+		echo "\n<p>Tipo habitación: $tipohab</p>";
+		echo "\n<p>Extras:";
+		echo "\n<ul>";
 		foreach ($extras as $value) {
-			echo "<br>&nbsp;&nbsp;&nbsp; $value";
+			echo "\n\t<li>$value</li>";
 		}
-		echo "</p>";
+		echo "\n</ul>";
+		echo "\n</p>";
 
-		echo "<p>Forma de pago: $fpago</p>";
-		echo "<p>Comentario: $coment</p>";
+		echo "\n<p>Forma de pago: $fpago</p>";
+		echo "\n<p>Comentario: $coment</p>";
 
 		?>	
 

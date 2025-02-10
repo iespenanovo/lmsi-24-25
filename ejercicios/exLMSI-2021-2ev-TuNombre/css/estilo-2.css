@@ -24,7 +24,11 @@ label {
 	color: tomato;
 }
 label.etiqueta {
-
 	color: blue;
+	display: block;
 }
 
+#coment {
+	width: 100%;
+
+}
