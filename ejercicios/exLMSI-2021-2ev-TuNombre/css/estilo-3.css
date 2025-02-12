@@ -6,28 +6,60 @@
 	background-color: lightblue;
 	padding: 100px 0;
 	margin: 50px 0;
+
+	text-align: center; /* se hereda a descendientes, 
+						así no tengo que centrar 
+						elemento a elemento */
+
 }
 #flex {
 	border: 1px solid tomato;
+	width: 80%;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-between;
 }
 
 .item-flex  {
-	
+	border: 1px solid grey;
+	padding: 20px 0;
+	flex-basis: 15%;
+}
 
+.item-flex:nth-child(1) {
+	text-align: left;
+}
+
+.item-flex:nth-child(2) {
+	flex-basis: 45%;
+}
+
+i[class] {  /* selector: elementos i con atributo class */
+	font-size: 4rem;
 }
 
 table {
 	margin:0 auto;
 	border-collapse: collapse;
+	width: 100%;
 
 }
 
 table th{
 	background-color: #000;
 	color: #ccc;
+	padding: 10px 0;
 
 }
 
 table td {
 	border-bottom: 1px solid black;
+	padding: 5px 0;
 }
+
+table td:hover {
+	background-color: tomato;
+	color: #fff; /* white */
+}	
+
