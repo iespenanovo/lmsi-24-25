@@ -13,14 +13,60 @@ h1 {
 	text-align: center;
 }
 #flex {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	justify-content: space-between;
 
+	width: 100%; 
+	margin: auto;
+
+	text-align: center;
 }
 
 .item-flex {
 	font-size: 3rem;
 	padding: 30px 0;
 	background-color: lightgrey;
+
+	flex-basis: 100%;
+
 }
 
+@media (min-width: 768px) {
+	#flex {
+		width: 90%;
+	}
 
+	.item-flex {
+		flex-basis: 31.66%;
+	}
+}
 
+@media (min-width: 992px) {
+	#flex {
+		width: 80%;
+	}
+
+	.item-flex {
+		flex-basis: 23.75%;
+	}
+}
+
+@media (min-width: 1200px) {
+	#flex {
+		width: 70%;
+	}
+
+	.item-flex {
+		flex-basis: 15.83%;
+	}
+
+	.item-flex:nth-child(1), .item-flex:nth-child(3) {
+		flex-basis: 23.75%;
+	}
+
+	.item-flex:nth-child(2) {
+		flex-basis: 47.5%;
+	}
+}
