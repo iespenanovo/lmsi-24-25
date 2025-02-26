@@ -16,6 +16,9 @@ Página para estilos propios (style.css)
 		font-size: 1.2em;
 	}
 
+#carousel {
+	display: none;
+}
 
 #alumnos {
 	background-color: #337ab7; /*azul primary de bootstrap*/
@@ -23,6 +26,31 @@ Página para estilos propios (style.css)
 	text-align: center;
 	padding: 20px 0;
 }
+	#alumnos h1 {
+		font-weight: 900;
+	}
+
+	#alumnos-cont img {
+		width: 100%;
+	}
+
+	#alumnos-cont {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		justify-content: space-between;
+	}
+
+	#alumnos-cont > div { /* items flex */
+		padding: 5px;
+		flex-basis: 45%; /* 90% / 2 = 45% */
+
+	}
+	#alumnos-cont > div:hover {
+		border: 5px dotted #fff;
+	}
 
 #pie {
 	background-color: #000;
@@ -37,3 +65,30 @@ Página para estilos propios (style.css)
 
 
 
+/* Medium devices (tablets, 768px and up)*/
+/* 3 columnas */
+@media (min-width: 768px) {
+	#alumnos-cont {
+		width: 90%;
+	}
+	#alumnos-cont > div {
+		flex-basis: 30%; /* 90% / 3 = 30% */
+	}
+
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+/* 4 columnas */
+@media (min-width: 992px) {
+	#carousel {	display: block;	}
+	#alumnos-cont {
+		width: 85%;
+	}
+
+	#alumnos-cont > div {
+		flex-basis: 15%; /* 90% / 6 = 15% */
+	}	
+
+
+}

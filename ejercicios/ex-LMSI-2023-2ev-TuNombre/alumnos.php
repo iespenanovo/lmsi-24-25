@@ -1,6 +1,6 @@
 <div id="alumnos">
 	<h1>IES LOIS PEÑA NOVO</h1>
-	<h2>Alumnos/as participantes</h2>
+	<h2>Alumnos/as participantes (Juan)</h2>
 
 	<div id="alumnos-cont">
 		<!-- (div>img[src="img/alum$.png" alt="Alumno $"]+h3{Alumno $})*6 -->
