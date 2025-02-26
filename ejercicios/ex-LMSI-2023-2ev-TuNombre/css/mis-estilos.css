@@ -30,11 +30,11 @@ Página para estilos propios (style.css)
 		font-weight: 900;
 	}
 
-	#alumnos-cont img {
+	#alumnos-cont img, #contacto-cont img, #pie-cont img {
 		width: 100%;
 	}
 
-	#alumnos-cont {
+	#alumnos-cont, #contacto-cont, #pie-cont {
 		width: 100%;
 		margin: 0 auto;
 		display: flex;
@@ -57,23 +57,95 @@ Página para estilos propios (style.css)
 	padding: 20px 0;
 }
 
+	
+	#pie-cont > div {
+		flex-basis: 100%;
+/*		border: 1px solid white;*/
+	}
+
+	#pie-cont div:nth-child(3) {
+		flex-basis: 30% ;
+	}		
+
+	#pie-cont img {
+		margin-top: 40px;
+	}
+
+	#pie-cont ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	#pie-cont a {
+		color:#ccc;
+	}	
+
+	#pie-cont table {
+		width: 100%;
+	}	
+	
+	#pie-cont table tr {
+		border-top: 1px solid #ccc;
+	}	
+	#pie-cont table td, #pie-cont table th {
+		padding: 5px 0;
+	}	
+	#pie-cont table tr:hover {
+		background-color: #ccc;
+		color: #000;
+	}	
+
+
+
 #contacto {
 	background-color: #337ab7; /*azul primary de bootstrap*/
-	padding: 20px 0;
+	padding: 20px 12px;
+	color: #fff;
 }
+	#contacto-cont>h1 {
+		flex-basis: 100%; /* en todos los escenarios, no va a cambiar en los @media */
+	}
+	#contacto-cont>div {
+		flex-basis: 100%;
+	}
 
+	#contacto-cont label {
+		display: block;
+	}
+	#contacto-cont label.enlinea {
+		display: inline-block;
+	}
+	#contacto-cont .campo {
+		margin-bottom: 15px;
+	}
+	#contacto-cont input, #contacto-cont textarea {
+		color: black;
+	}
+	#contacto-cont input[type="text"], #contacto-cont input[type="email"], #contacto-cont textarea {
+		width: 100%;
+	}	
 
 
 
 /* Medium devices (tablets, 768px and up)*/
 /* 3 columnas */
 @media (min-width: 768px) {
-	#alumnos-cont {
+	#alumnos-cont, #contacto-cont, #pie-cont {
 		width: 90%;
 	}
 	#alumnos-cont > div {
 		flex-basis: 30%; /* 90% / 3 = 30% */
 	}
+	#contacto-cont>div {
+		flex-basis: 49%;
+	}
+	#pie-cont div {
+		flex-basis: 30%;
+	}
+	#pie-cont div:nth-child(2) {
+		flex-basis: 60%;
+	}	
+
 
 }
 
@@ -82,7 +154,7 @@ Página para estilos propios (style.css)
 /* 4 columnas */
 @media (min-width: 992px) {
 	#carousel {	display: block;	}
-	#alumnos-cont {
+	#alumnos-cont, #contacto-cont, #pie-cont {
 		width: 85%;
 	}
 
@@ -90,5 +162,11 @@ Página para estilos propios (style.css)
 		flex-basis: 15%; /* 90% / 6 = 15% */
 	}	
 
-
+	#pie-cont div {
+		flex-basis: 22.5%;
+		/*border: 1px solid white;*/
+	}
+	#pie-cont div:nth-child(2) {
+		flex-basis: 45%;
+	}	
 }
