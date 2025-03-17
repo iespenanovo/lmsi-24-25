@@ -1,0 +1,16 @@
+* {box-sizing: border-box;}
+
+.contenedor-grid-1 {
+	display: grid;
+/*	grid-template-columns: 25% 25% 50%;*/
+grid-template-columns: [primera] 25% [linea2] 25% [linea3] 50% [ultima];
+/*grid-template-columns: repeat(2,25%) 50%;*/
+
+}
+
+.item-grid {
+	font-size: 1.5rem;
+	padding: 1rem;
+/*	border: 1px dotted grey;*/
+	text-align: center;
+}
