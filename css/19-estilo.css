@@ -1,0 +1,28 @@
+* {box-sizing: border-box;}
+
+.contenedor {
+	display: grid;
+/*	grid-template-columns: 3fr 5px 1fr;*/
+/*	grid-template-rows: 10vh 80vh 10vh; */  /* 10vh= 10% alto pantalla dispositivo ...  */
+	/* tambien tenemos vw, hace referencia al ancho de pantalla dispositivo, 50vw = 50% del ancho pantalla */
+/*	grid-template-areas: 
+		"cabecera cabecera cabecera"
+		"principal . barra-lateral"
+		"pie pie pie";
+*/
+	/* equivalente con SHORT HAND	*/
+	grid-template: 
+		"cabecera cabecera cabecera" 10vh
+		"principal . barra-lateral" 80vh
+		"pie pie pie" 10vh
+		/ 3fr 5px 1fr;
+}
+
+.item {
+	border: 1px dotted grey;
+}
+
+.cabecera {	grid-area: cabecera;}
+.principal { grid-area: principal; }
+.barra-lateral { grid-area: barra-lateral; }
+.pie { grid-area: pie; }
