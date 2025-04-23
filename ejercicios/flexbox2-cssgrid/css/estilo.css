@@ -18,43 +18,58 @@
 #cabecera {
 	background-color: #202020;
 	height: 170px;
-	display: flex;
-/*	flex-direction:row-reverse;, en lugar de justify-content: flex-end;*/
-	justify-content: flex-end;
-	align-items: center;
-/*	padding-right: 12%;*/
-/*  también podría dar un padding-right al #logo
-	y tendría el mismo efecto visual
-*/
+	display: grid;
+	grid-template-columns: 1fr; /* o 100%, por defecto ya tenemos 1 columna al 100% */
+	/* alineación items horizontal y vertical */
+	justify-items: end; /* por defecto strech */
+	align-items: center; /* por defecto strech */	
 }
-/*
-#logo {
-	padding-right: 12%;
-}
-*/
 
 h1 {
 	text-align: center;
 }
 
 #viajes {
-/*	border: 1px solid blue;*/
-	display: flex;
-	flex-direction: row-reverse;
+	border: 1px solid blue;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* solución con areas: */
+	grid-template-areas: 
+		"tres dos uno";
 }
+
 
 .viajes-item {
 /*	border: 1px solid red;*/
 	flex-basis: 33.33%;
 	padding: 20px;
 
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	
+
+/*	grid-row: 1/2;*/ /* en caso de no usar areas */
 }
+/* en caso de no usar areas: */
+/*
+.viajes-item.tres {
+	grid-column: 1/2;
+}
+.viajes-item.dos {
+	grid-column: 2/3;
+}
+.viajes-item.uno {
+	grid-column: 3/4;
+}
+
+*/
+/* solución de colocación de .viajes-item usando areas */
+.viajes-item.tres{	grid-area: tres;}
+.viajes-item.dos{	grid-area: dos;}
+.viajes-item.uno{	grid-area: uno;}
+
 
 .viajes-item img {
 	width: 100%;
-	order: -1;
 }
 
 .viajes-item button {
