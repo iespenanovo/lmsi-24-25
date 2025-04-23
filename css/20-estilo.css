@@ -1,0 +1,47 @@
+* {box-sizing: border-box;}
+
+h1, .item {text-align: center;}
+
+.item {
+	border: 1px solid grey;
+	padding: 2rem;
+	font-size: 2rem;
+}
+
+.contenedor-grid-1 {
+	border: 2px dotted red;
+	height: 600px;
+
+	display: grid;
+	grid-template-columns: repeat(4, 22%);
+	grid-template-rows: repeat(3, 150px);
+
+	/* alineación items horizontal y vertical */
+	justify-items: center; /* por defecto strech */
+	align-items: end;	/* por defecto strech */
+
+	/* alineación columnas (horizontal) */	
+	justify-content: space-between; /* por defecto start */
+	/* alineación filas (vertical) */
+	align-content: space-around; /* por defecto start */
+}
+
+.contenedor-grid-1 .item:nth-child(3) {
+	justify-self: end;
+	align-self: start;
+}
+
+.contenedor-grid-2 {
+	/* normalmente trabamos con alineaciones 
+	de columnas en la grilla cuando nos 
+	sobra espaico  */
+	
+	border: 2px dotted blue;
+
+	display: grid;
+	grid-template-columns: repeat(5, 18%);
+
+	justify-content: space-evenly;
+
+	row-gap: 0.5rem;
+}
