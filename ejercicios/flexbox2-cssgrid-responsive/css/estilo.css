@@ -32,10 +32,13 @@ h1, h3 {
 #viajes {
 	border: 1px solid blue;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr;
 	/* solución con areas: */
 	grid-template-areas: 
-		"tres dos uno";
+		"tres"
+		"dos"
+		"uno";		
+
 }
 
 
@@ -79,3 +82,25 @@ h1, h3 {
 	margin-top: auto;
 }
 
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#viajes {
+/*		grid-template-columns: repeat(2, 1fr);*/
+/*		grid-template-areas: 
+			"tres dos"
+			"uno";*/
+	}		
+	
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	#viajes {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: 
+			"tres dos uno";
+	}
+
+}
