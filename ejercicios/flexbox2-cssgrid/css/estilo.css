@@ -25,7 +25,7 @@
 	align-items: center; /* por defecto strech */	
 }
 
-h1 {
+h1, h3 {
 	text-align: center;
 }
 
@@ -43,7 +43,6 @@ h1 {
 /*	border: 1px solid red;*/
 	flex-basis: 33.33%;
 	padding: 20px;
-
 	display: grid;
 	
 
@@ -67,6 +66,9 @@ h1 {
 .viajes-item.dos{	grid-area: dos;}
 .viajes-item.uno{	grid-area: uno;}
 
+	.viajes-item img {
+		grid-row: 1 / 2; /* la imagen va en la primera fila */
+	}
 
 .viajes-item img {
 	width: 100%;
@@ -74,7 +76,7 @@ h1 {
 
 .viajes-item button {
 	width: 35%;
-	align-self: center;
+	justify-self: center;	
 	margin-top: auto;
 }
 
