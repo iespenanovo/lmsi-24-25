@@ -1,0 +1,23 @@
+/* esta es la hoja de estilo para ejer3.html */
+
+* {
+	box-sizing: border-box;
+}
+
+#diapositivas {
+	margin: 30px 0;
+}
+
+#contenido {
+	border: 1px solid red;
+
+}
+#contenido div {
+	border: 1px dotted grey;
+	padding: 1rem;
+	text-align: center;
+	font-size: 2rem;
+}
+
+/*ayuda con nth-child:*/
+/*https://www.esthersola.com/nth-child-css-ejemplos-practicos/*/
