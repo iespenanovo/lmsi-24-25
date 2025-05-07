@@ -1,0 +1,22 @@
+/* diseño responsive con css grid , mobile first */
+/* hacemos diseño por defecto para dispositivos pequeños */
+/* 
+	1 col dispositivos muy pequeños XS (contenedor 100%)
+	2 col dispositiovs pequeños SM (contenedor 95%)
+	3 col tablet MD (contenedor 90%)
+	4 col escritorio LG (contenedor 85%)
+	6 col escritorio grande XL (contenedor 80%)
+	8 col escritorio muy grande XXL (contenedor 75%)
+
+	separación de 10px entre columnas y filas
+
+*/
+
+* {	box-sizing: border-box;	}
+
+h1 { text-align: center; }
+
+/* empezamos con css para 1 columna, sin @media, diseño por defeco */
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
