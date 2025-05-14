@@ -6,10 +6,14 @@
 
 #diapositivas {
 	margin: 30px 0;
+	display: none;
 }
 
 #contenido {
 	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 1fr; /* es la disposición por defecto */
+	row-gap: 12px;
 
 }
 #contenido div {
@@ -19,5 +23,55 @@
 	font-size: 2rem;
 }
 
+#contenido div:nth-child(n+7) { /* aplica a los hijos a partir del 7(este incluido) */
+	display: none;
+}
+
 /*ayuda con nth-child:*/
 /*https://www.esthersola.com/nth-child-css-ejemplos-practicos/*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	#contenido {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#contenido {
+		grid-template-columns: 33.33% 25% 33.33%;
+		justify-content: space-between;
+	}	
+	#contenido div:nth-child(n+7) { /* aplica a los hijos a partir del 7(este incluido) */
+		display: block;
+	}	
+	#diapositivas { /* mostramos diapositivas */
+		display: block;
+	}
+	#diapositivas p{ /* ocultamos textos */
+		display: none;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	#contenido {
+		grid-template-columns: repeat(3, 25%) 8.33%;
+		justify-content: space-evenly;
+	}	
+	#diapositivas p{ /* mostramos textos */
+		display: block;
+	}	
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	#contenido {
+		grid-template-columns: 25% 8.33% 16.66% 8.33% repeat(2, 16.66%);
+	}	
+	#diapositivas { /* ocultamos diapositivas */
+		display: none;
+	}
+}
+
