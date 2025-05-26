@@ -35,30 +35,113 @@ body {
 		width: 100%;
 }
 
-/******************************************/
-/*ESCRIBE AQUÍ TU CODIGO CSS para ENLACES:*/
-/******************************************/
+/*ESCRIBE AQUÍ TU CODIGO CSS :*/
+
+#enlaces .contenido-ejercicio {
+	background: url("../img/ok.png") repeat-x 50% 0%,
+	            url("../img/logo.png") repeat-x 50% 100%;
+
+	background-size: 5%, 15%;
+}	
+#enlaces i {
+	color: red;
+
+}
+#enlaces ol {
+	padding: 20px 0;
+}
+#enlaces ol li {
+	margin-bottom: 15px;
+	font-size: 1.2rem;
+}
+
+#tablas table {
+	border:1px solid black;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	border-collapse: collapse;
+
+}
+#tablas td, #tablas th {
+	border-right: 1px solid black;
+	padding: 20px;
+}
+#tablas th {
+	background-color: black;
+	color: white;
+	width: 20%;
+}
+
+#tablas td[colspan] {
+	background-color: aquamarine;
+}
+#tablas img {
+	width: 100%;
+}
+#tablas td:hover {
+	background-color: tomato;
+}
+
+
+#listas ol {
+	list-style-type: lower-roman;
+	color: green;
+	font-size: 2rem;
+}
+
+#listas ol ol {
+	list-style-type: square;
+	color: brown;
+	font-size: 1.5rem;
+}
+
+#listas ol ol ol {
+	text-decoration: none;
+	list-style-type: lower-alpha;
+	color: blue;
+	font-size: 1rem;
+}
+#listas ol ol ol ol {
+	list-style-type: decimal-leading-zero;
+	color: grey;
+	text-decoration: underline;
+	font-size: 0.6rem;
+}
 
 
 
-/*****************************************/
-/*ESCRIBE AQUÍ TU CODIGO CSS para TABLAS:*/
-/*****************************************/
+#formulario form {
+	width: 80%;
+	margin: auto;
+	padding: 1rem;
+	border: 1px solid grey;
+}
 
 
+#formulario .campo {
+	margin-bottom: 10px;
+}
+#formulario .etiqueta {
+	display: block;
+	color: blue;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 3px;
+}
 
-/*****************************************/
-/*ESCRIBE AQUÍ TU CODIGO CSS para LISTAS:*/
-/*****************************************/
-
-
-
-/**********************************************/
-/*ESCRIBE AQUÍ TU CODIGO CSS para FORMULARIOS:*/
-/**********************************************/
-
-
-
+#formulario  label {
+	color:tomato;
+	font-style: italic;
+	font-size: 1.2rem;
+}
+#formulario textarea {
+width: 100%
+}
+#formulario input[type='submit'] {
+	width: 100%;
+	padding: 5% 0;
+}
 /******************************************************************/
 
 /*// Medium devices (tablets, 768px and up)*/
